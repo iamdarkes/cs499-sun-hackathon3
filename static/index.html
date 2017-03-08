@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hackthon 3</title>
+</head>
+<body>
+<h1>Provide us with Information and Get Traffic Status Predictions!</h1>
+<form action="http://ec2-54-186-25-49.us-west-2.compute.amazonaws.com:5000/getData" method="Post">
+    Road Id<br>
+    <input type="text" name="roadID"><br>
+    Direction<br>
+    <input type="text" name="direction"><br>
+    Day of Week<br>
+    <input type="text" name="dayOfWeek"><br>
+    Time of Day<br>
+    <input type="text" name="timeOfDay"><br>
+    Traffic Status<br>
+    <input type="text" name="trafficStatus"><br>
+    <input type="submit" value="Add Data!">
+</form>
+<form action="http://ec2-54-186-25-49.us-west-2.compute.amazonaws.com:5000/status" method="Post">
+    Road Id<br>
+    <input type="text" name="roadID"><br>
+    Direction<br>
+    <input type="text" name="direction"><br>
+    Day of Week<br>
+    <input type="text" name="dayOfWeek"><br>
+    Time of Day<br>
+    <input type="text" name="timeOfDay"><br>
+    <input type="submit" value="Get a Traffic Status Prediction!">
+</form>
+</body>
+</html>
